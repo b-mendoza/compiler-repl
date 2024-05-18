@@ -60,9 +60,9 @@ importers:
       '@babel/core':
         specifier: 7.24.5
         version: 7.24.5
-      '@babel/plugin-proposal-private-methods':
-        specifier: 7.18.6
-        version: 7.18.6(@babel/core@7.24.5)
+      '@babel/plugin-transform-private-methods':
+        specifier: 7.24.1
+        version: 7.24.1(@babel/core@7.24.5)
       '@babel/plugin-transform-typescript':
         specifier: 7.24.5
         version: 7.24.5(@babel/core@7.24.5)
@@ -257,6 +257,12 @@ packages:
 
   '@babel/plugin-transform-modules-commonjs@7.24.1':
     resolution: {integrity: sha512-szog8fFTUxBfw0b98gEWPaEqF42ZUD/T3bkynW/wtgx2p/XCP55WEsb+VosKceRSd6njipdZvNogqdtI4Q0chw==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+
+  '@babel/plugin-transform-private-methods@7.24.1':
+    resolution: {integrity: sha512-tGvisebwBO5em4PaYNqt4fkw56K2VALsAbAakY0FjTYqJp7gfdrgr7YX76Or8/cpik0W6+tj3rZ0uHU9Oil4tw==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -2664,6 +2670,12 @@ snapshots:
       '@babel/helper-module-transforms': 7.24.5(@babel/core@7.24.5)
       '@babel/helper-plugin-utils': 7.24.5
       '@babel/helper-simple-access': 7.24.5
+
+  '@babel/plugin-transform-private-methods@7.24.1(@babel/core@7.24.5)':
+    dependencies:
+      '@babel/core': 7.24.5
+      '@babel/helper-create-class-features-plugin': 7.24.5(@babel/core@7.24.5)
+      '@babel/helper-plugin-utils': 7.24.5
 
   '@babel/plugin-transform-react-display-name@7.24.1(@babel/core@7.24.5)':
     dependencies:
