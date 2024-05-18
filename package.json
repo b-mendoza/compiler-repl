@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "dev": "next dev",
     "lint": "next lint",
-    "lint:compiler": "eslint --no-eslintrc --config compiler.eslintrc.json"
+    "lint:compiler": "eslint --no-eslintrc --config compiler.eslintrc.json",
+    "start": "next start"
   },
   "dependencies": {
     "@codemirror/lang-javascript": "6.2.2",
